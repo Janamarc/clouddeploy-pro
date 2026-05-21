@@ -1,86 +1,99 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudDeploy Pro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Animation Showcase</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1>CloudDeploy- newbie</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#pipeline">CI/CD</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <h2>Loading Experience...</h2>
+  </div>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>AWS & DevOps Portfolio</h2>
-            <p>
-                Demonstrating CI/CD pipeline deployment using
-                GitHub Actions, AWS EC2, and Nginx.
-            </p>
-            <button onclick="showMessage()">View Deployment</button>
-        </div>
-    </section>
+  <!-- PARTICLES -->
+  <div class="particles"></div>
 
-    <section class="skills" id="skills">
-        <h2>Technical Skills</h2>
+  <!-- NAVBAR -->
+  <nav>
+    <h1>MotionX</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#cards">Effects</a></li>
+      <li><a href="#svg">SVG</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <div class="cards">
-            <div class="card">
-                <h3>AWS EC2</h3>
-                <p>Hosting scalable web applications on cloud infrastructure.</p>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Frontend Animation Showcase</h1>
+      <p>Creative UI animations using HTML, CSS & JavaScript.</p>
 
-            <div class="card">
-                <h3>GitHub Actions</h3>
-                <p>Automating deployment pipelines with continuous integration.</p>
-            </div>
+      <button class="morph-btn">
+        Explore Animations
+      </button>
+    </div>
+  </section>
 
-            <div class="card">
-                <h3>Linux & Nginx</h3>
-                <p>Managing Linux servers and configuring Nginx web servers.</p>
-            </div>
-        </div>
-    </section>
+  <!-- CARDS -->
+  <section class="cards-section" id="cards">
 
-    <section class="pipeline" id="pipeline">
-        <h2>CI/CD Workflow</h2>
+    <h2 class="section-title reveal">Hover Animation Cards</h2>
 
-        <div class="timeline">
-            <div class="step">1. Push Code to GitHub</div>
-            <div class="step">2. GitHub Actions Triggered</div>
-            <div class="step">3. Build & Test</div>
-            <div class="step">4. Deploy to AWS EC2</div>
-            <div class="step">5. Website Updated Automatically</div>
-        </div>
-    </section>
+    <div class="cards">
 
-    <section class="stats">
-        <div class="stat-box">
-            <h3 id="counter">0</h3>
-            <p>Successful Deployments</p>
-        </div>
-    </section>
+      <div class="card reveal">
+        <h3>3D Hover</h3>
+        <p>Smooth interactive hover effects.</p>
+      </div>
 
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourmail@example.com</p>
-        <p>GitHub: github.com/yourgithub</p>
-    </section>
+      <div class="card reveal">
+        <h3>Glow UI</h3>
+        <p>Modern neon glow animations.</p>
+      </div>
 
-    <footer>
-        <p>© 2026 CloudDeploy Pro | AWS CI/CD Portfolio</p>
-    </footer>
+      <div class="card reveal">
+        <h3>Motion Effects</h3>
+        <p>Dynamic scrolling transitions.</p>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+
+  </section>
+
+  <!-- SVG SECTION -->
+  <section class="svg-section" id="svg">
+
+    <h2 class="section-title reveal">SVG Line Animation</h2>
+
+    <svg width="300" height="200" viewBox="0 0 300 200">
+      <path
+        d="M20 100 Q150 10 280 100"
+        stroke="#00e5ff"
+        stroke-width="5"
+        fill="transparent"
+        class="animated-path"
+      />
+    </svg>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <h2>Let's Build Creative Interfaces</h2>
+    <button class="contact-btn">Contact Me</button>
+  </section>
+
+  <footer>
+    <p>© 2026 MotionX | Frontend Showcase</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
